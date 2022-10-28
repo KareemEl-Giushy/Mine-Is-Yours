@@ -259,6 +259,15 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
       appBar: AppBar(
+        title: Center(
+            child: Text(
+          "Mine Is Yours",
+          style: FlutterFlowTheme.of(context).title2.override(
+                fontFamily: 'Poppins',
+                color: Colors.black,
+                fontSize: 25,
+              ),
+        )),
         backgroundColor: Colors.white,
         iconTheme: const IconThemeData(color: Colors.black),
         automaticallyImplyLeading: true,
