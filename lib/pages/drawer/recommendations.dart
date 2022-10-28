@@ -2,14 +2,14 @@ import '../../core/flutter_flow/flutter_flow_icon_button.dart';
 import '../../core/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 
-class RecommendationWidget extends StatefulWidget {
-  const RecommendationWidget({Key? key}) : super(key: key);
+class RecommendationScreen extends StatefulWidget {
+  const RecommendationScreen({Key? key}) : super(key: key);
 
   @override
-  State<RecommendationWidget> createState() => _RecommendationWidgetState();
+  State<RecommendationScreen> createState() => _RecommendationScreenState();
 }
 
-class _RecommendationWidgetState extends State<RecommendationWidget> {
+class _RecommendationScreenState extends State<RecommendationScreen> {
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override

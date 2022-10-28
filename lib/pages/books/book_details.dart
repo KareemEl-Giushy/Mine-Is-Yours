@@ -302,12 +302,7 @@ used */
                               const EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
                           child: InkWell(
                             onTap: () async {
-                              await Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const MyProfileWidget(),
-                                ),
-                              );
+                              await Navigator.pushNamed(context, '/profile');
                             },
                             child: Row(
                               mainAxisSize: MainAxisSize.max,

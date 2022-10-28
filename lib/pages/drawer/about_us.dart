@@ -1,15 +1,14 @@
-import '../../core/flutter_flow/flutter_flow_icon_button.dart';
-import '../../core/flutter_flow/flutter_flow_theme.dart';
+import 'package:mus_app/core/flutter_flow/flutter_flow.dart';
 import 'package:flutter/material.dart';
 
-class AboutUsWidget extends StatefulWidget {
-  const AboutUsWidget({Key? key}) : super(key: key);
+class AboutUsScreen extends StatefulWidget {
+  const AboutUsScreen({Key? key}) : super(key: key);
 
   @override
-  State<AboutUsWidget> createState() => _AboutUsWidgetState();
+  State<AboutUsScreen> createState() => _AboutUsScreenState();
 }
 
-class _AboutUsWidgetState extends State<AboutUsWidget> {
+class _AboutUsScreenState extends State<AboutUsScreen> {
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -35,7 +34,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
           },
         ),
         title: Text(
-          '2lapd34o' /* About Us */,
+          'About Us' /* About Us */,
           style: FlutterFlowTheme.of(context).title2.override(
                 fontFamily: 'Poppins',
                 color: Colors.black,
@@ -57,7 +56,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                 Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(20, 20, 20, 0),
                   child: Text(
-                    '8yvhyud8' /* We are a group of book lovers ... */,
+                    'We are a group of book lovers' /* We are a group of book lovers ... */,
                     textAlign: TextAlign.start,
                     style: FlutterFlowTheme.of(context).bodyText1.override(
                           fontFamily: 'Libre Baskerville',

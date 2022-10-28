@@ -6,19 +6,19 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class PaymentWidget extends StatefulWidget {
-  const PaymentWidget({Key? key}) : super(key: key);
+class PaymentScreen extends StatefulWidget {
+  const PaymentScreen({Key? key}) : super(key: key);
 
   @override
-  State<PaymentWidget> createState() => _PaymentWidgetState();
+  State<PaymentScreen> createState() => _PaymentScreenState();
 }
 
-class _PaymentWidgetState extends State<PaymentWidget> {
+class _PaymentScreenState extends State<PaymentScreen> {
   TextEditingController? textController;
-  bool? checkboxListTileValue1;
+  bool? radioListTileValue1;
   final creditCardFormKey = GlobalKey<FormState>();
   CreditCardModel creditCardInfo = emptyCreditCard();
-  bool? checkboxListTileValue2;
+  bool? radioListTileValue2;
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -56,7 +56,7 @@ class _PaymentWidgetState extends State<PaymentWidget> {
           },
         ),
         title: Text(
-          '4eot8rss' /* Payment */,
+          'Payment' /* Payment */,
           style: FlutterFlowTheme.of(context).title2.override(
                 fontFamily: 'Poppins',
                 color: Colors.black,
@@ -69,8 +69,9 @@ class _PaymentWidgetState extends State<PaymentWidget> {
       body: SafeArea(
         child: GestureDetector(
           onTap: () => FocusScope.of(context).unfocus(),
-          child: Column(
-            mainAxisSize: MainAxisSize.max,
+          child: ListView(
+            shrinkWrap: true,
+            padding: const EdgeInsets.symmetric(vertical: 60),
             children: [
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
@@ -123,13 +124,15 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                                           const Color(0xFF95A1AC),
                                     ),
                                     child: CheckboxListTile(
-                                      value: checkboxListTileValue1 ??= true,
+                                      value: radioListTileValue1 ??= true,
                                       onChanged: (newValue) async {
-                                        setState(() =>
-                                            checkboxListTileValue1 = newValue!);
+                                        setState(() {
+                                          radioListTileValue2 = !newValue!;
+                                          radioListTileValue1 = newValue;
+                                        });
                                       },
                                       title: Text(
-                                        'nyam1sx1' /* Credit Card */,
+                                        'Credit Card' /* Credit Card */,
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText1
                                             .override(
@@ -159,7 +162,7 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                             autofocus: true,
                             obscureText: false,
                             decoration: InputDecoration(
-                              hintText: 'dutwpriu' /* Your Name */,
+                              hintText: 'Your Name' /* Your Name */,
                               hintStyle: FlutterFlowTheme.of(context)
                                   .bodyText2
                                   .override(
@@ -291,13 +294,15 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                                           const Color(0xFF95A1AC),
                                     ),
                                     child: CheckboxListTile(
-                                      value: checkboxListTileValue2 ??= false,
+                                      value: radioListTileValue2 ??= false,
                                       onChanged: (newValue) async {
-                                        setState(() =>
-                                            checkboxListTileValue2 = newValue!);
+                                        setState(() {
+                                          radioListTileValue1 = !newValue!;
+                                          radioListTileValue2 = newValue;
+                                        });
                                       },
                                       title: Text(
-                                        'd8a21k77' /* Paypal */,
+                                        'Paypal' /* Paypal */,
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText1
                                             .override(
@@ -342,12 +347,12 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(0, 50, 0, 0),
+                padding: const EdgeInsets.all(8),
                 child: FFButtonWidget(
                   onPressed: () {
                     print('Button pressed ...');
                   },
-                  text: 'cy6j7k7x' /* Pay Now */,
+                  text: 'Pay Now' /* Pay Now */,
                   options: FFButtonOptions(
                     width: 300,
                     height: 57,

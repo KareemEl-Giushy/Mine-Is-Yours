@@ -1,15 +1,14 @@
-import '../../core/flutter_flow/flutter_flow_icon_button.dart';
-import '../../core/flutter_flow/flutter_flow_theme.dart';
+import 'package:mus_app/core/flutter_flow/flutter_flow.dart';
 import 'package:flutter/material.dart';
 
-class MyExchangesWidget extends StatefulWidget {
-  const MyExchangesWidget({Key? key}) : super(key: key);
+class MyExchangesScreen extends StatefulWidget {
+  const MyExchangesScreen({Key? key}) : super(key: key);
 
   @override
-  State<MyExchangesWidget> createState() => _MyExchangesWidgetState();
+  State<MyExchangesScreen> createState() => _MyExchangesScreenState();
 }
 
-class _MyExchangesWidgetState extends State<MyExchangesWidget> {
+class _MyExchangesScreenState extends State<MyExchangesScreen> {
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override

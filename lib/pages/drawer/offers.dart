@@ -3,16 +3,16 @@ import '../../core/flutter_flow/flutter_flow_theme.dart';
 import '../../core/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 
-class OffersWidget extends StatefulWidget {
-  const OffersWidget({Key? key}) : super(key: key);
+class OffersScreen extends StatefulWidget {
+  const OffersScreen({Key? key}) : super(key: key);
 
   @override
-  State<OffersWidget> createState() => _OffersWidgetState();
+  State<OffersScreen> createState() => _OffersScreenState();
 }
 
-class _OffersWidgetState extends State<OffersWidget> {
-  bool? checkboxListTileValue1;
-  bool? checkboxListTileValue2;
+class _OffersScreenState extends State<OffersScreen> {
+  bool? radioListTileValue1;
+  bool? radioListTileValue2;
   bool? checkboxListTileValue3;
   bool? checkboxListTileValue4;
   final scaffoldKey = GlobalKey<ScaffoldState>();
@@ -40,7 +40,7 @@ class _OffersWidgetState extends State<OffersWidget> {
           },
         ),
         title: Text(
-          'u0veneoe' /* Offers / Plans */,
+          'Offers / Plans' /* Offers / Plans */,
           style: FlutterFlowTheme.of(context).title2.override(
                 fontFamily: 'Poppins',
                 color: Colors.black,
@@ -62,7 +62,7 @@ class _OffersWidgetState extends State<OffersWidget> {
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Text(
-                      '83axni5k' /* Your Subscription */,
+                      'Your Subscription' /* Your Subscription */,
                       style: FlutterFlowTheme.of(context).bodyText2.override(
                             fontFamily: 'Poppins',
                             color: Colors.black,
@@ -104,17 +104,19 @@ class _OffersWidgetState extends State<OffersWidget> {
                             unselectedWidgetColor: const Color(0xFF95A1AC),
                           ),
                           child: CheckboxListTile(
-                            value: checkboxListTileValue1 ??= true,
+                            value: radioListTileValue1 ??= true,
                             onChanged: (newValue) async {
-                              setState(
-                                  () => checkboxListTileValue1 = newValue!);
+                              setState(() {
+                                radioListTileValue2 = !newValue!;
+                                radioListTileValue1 = newValue;
+                              });
                             },
                             title: Text(
-                              '35i6l79u' /* Monthly */,
+                              'Monthly' /* Monthly */,
                               style: FlutterFlowTheme.of(context).bodyText2,
                             ),
                             subtitle: Text(
-                              'cab2p60k' /* $15.99/mo */,
+                              '\$15.99/mo' /* $15.99/mo */,
                               style: FlutterFlowTheme.of(context).title3,
                             ),
                             tileColor:
@@ -134,7 +136,7 @@ class _OffersWidgetState extends State<OffersWidget> {
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               12, 0, 24, 0),
                           child: Text(
-                            'okotoip1' /* Can post up to 15 books per mo... */,
+                            'Can post up to 15 books per month' /* Can post up to 15 books per mo... */,
                             style: FlutterFlowTheme.of(context).bodyText2,
                           ),
                         ),
@@ -175,17 +177,19 @@ class _OffersWidgetState extends State<OffersWidget> {
                             unselectedWidgetColor: const Color(0xFF95A1AC),
                           ),
                           child: CheckboxListTile(
-                            value: checkboxListTileValue2 ??= false,
+                            value: radioListTileValue2 ??= false,
                             onChanged: (newValue) async {
-                              setState(
-                                  () => checkboxListTileValue2 = newValue!);
+                              setState(() {
+                                radioListTileValue1 = !newValue!;
+                                radioListTileValue2 = newValue;
+                              });
                             },
                             title: Text(
-                              'b0ji2ntd' /* Annual (save $12) */,
+                              'Annual (save \$12)' /* Annual (save $12) */,
                               style: FlutterFlowTheme.of(context).bodyText2,
                             ),
                             subtitle: Text(
-                              '8kratgm8' /* $180/yr */,
+                              '\$180/yr' /* $180/yr */,
                               style: FlutterFlowTheme.of(context).title3,
                             ),
                             tileColor:
@@ -205,7 +209,7 @@ class _OffersWidgetState extends State<OffersWidget> {
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               12, 0, 24, 0),
                           child: Text(
-                            'uv03e9zf' /* Can post up to 180 book per ye... */,
+                            'Can post up to 180 book per year' /* Can post up to 180 book per ye... */,
                             style: FlutterFlowTheme.of(context).bodyText2,
                           ),
                         ),
@@ -220,7 +224,7 @@ class _OffersWidgetState extends State<OffersWidget> {
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Text(
-                      'jvmyojni' /* Other Offers */,
+                      'Other Offers' /* Other Offers */,
                       style: FlutterFlowTheme.of(context).bodyText2.override(
                             fontFamily: 'Poppins',
                             color: Colors.black,
@@ -268,11 +272,11 @@ class _OffersWidgetState extends State<OffersWidget> {
                                   () => checkboxListTileValue3 = newValue!);
                             },
                             title: Text(
-                              'eeunvjj1' /* 120 points */,
+                              '120 points' /* 120 points */,
                               style: FlutterFlowTheme.of(context).title3,
                             ),
                             subtitle: Text(
-                              'fteyw3v3' /* $85 (get 15 free) */,
+                              '\$85 (get 15 free)' /* $85 (get 15 free) */,
                               style: FlutterFlowTheme.of(context).subtitle2,
                             ),
                             tileColor:
@@ -331,11 +335,11 @@ class _OffersWidgetState extends State<OffersWidget> {
                                   () => checkboxListTileValue4 = newValue!);
                             },
                             title: Text(
-                              'n77s331j' /* 250 points */,
+                              '250 points' /* 250 points */,
                               style: FlutterFlowTheme.of(context).title3,
                             ),
                             subtitle: Text(
-                              'a7vustur' /* $185 */,
+                              '\$185' /* $185 */,
                               style: FlutterFlowTheme.of(context).subtitle2,
                             ),
                             tileColor:
@@ -360,14 +364,9 @@ class _OffersWidgetState extends State<OffersWidget> {
                 padding: const EdgeInsetsDirectional.fromSTEB(0, 80, 0, 0),
                 child: FFButtonWidget(
                   onPressed: () async {
-                    await Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Container(), // Change
-                      ),
-                    );
+                    await Navigator.pushNamed(context, '/payment');
                   },
-                  text: 'cmbb0kgh' /* Change Plan */,
+                  text: 'Change Plan' /* Change Plan */,
                   options: FFButtonOptions(
                     width: 300,
                     height: 57,

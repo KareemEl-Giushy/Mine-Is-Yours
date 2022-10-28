@@ -6,14 +6,14 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 import '../books/book_details.dart';
 
-class MyProfileWidget extends StatefulWidget {
-  const MyProfileWidget({Key? key}) : super(key: key);
+class MyProfileScreen extends StatefulWidget {
+  const MyProfileScreen({Key? key}) : super(key: key);
 
   @override
-  State<MyProfileWidget> createState() => _MyProfileWidgetState();
+  State<MyProfileScreen> createState() => _MyProfileScreenState();
 }
 
-class _MyProfileWidgetState extends State<MyProfileWidget> {
+class _MyProfileScreenState extends State<MyProfileScreen> {
   double? ratingBarValue1;
   double? ratingBarValue2;
   double? ratingBarValue3;

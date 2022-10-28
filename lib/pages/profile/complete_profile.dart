@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 
 import 'my_profile.dart';
 
-class CompleteprofileWidget extends StatefulWidget {
-  const CompleteprofileWidget({Key? key}) : super(key: key);
+class CompleteProfileScreen extends StatefulWidget {
+  const CompleteProfileScreen({Key? key}) : super(key: key);
 
   @override
-  State<CompleteprofileWidget> createState() => _CompleteprofileWidgetState();
+  State<CompleteProfileScreen> createState() => _CompleteProfileScreenState();
 }
 
-class _CompleteprofileWidgetState extends State<CompleteprofileWidget> {
+class _CompleteProfileScreenState extends State<CompleteProfileScreen> {
   TextEditingController? cityController1;
   TextEditingController? yourNameController1;
   TextEditingController? cityController2;
@@ -351,12 +351,7 @@ Profile */
                 padding: const EdgeInsetsDirectional.fromSTEB(0, 22, 0, 0),
                 child: FFButtonWidget(
                   onPressed: () async {
-                    await Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const MyProfileWidget(),
-                      ),
-                    );
+                    await Navigator.pushNamed(context, '/profile');
                   },
                   text: '5wzlz4po' /* Save */,
                   options: FFButtonOptions(

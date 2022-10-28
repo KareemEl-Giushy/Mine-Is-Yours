@@ -72,12 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   padding: const EdgeInsetsDirectional.fromSTEB(6, 0, 11, 3),
                   child: InkWell(
                     onTap: () async {
-                      await Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const MyProfileWidget(),
-                        ),
-                      );
+                      await Navigator.pushNamed(context, '/profile');
                     },
                     child: ListTile(
                       leading: const Icon(
@@ -110,12 +105,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: const EdgeInsetsDirectional.fromSTEB(6, 0, 11, 0),
                 child: InkWell(
                   onTap: () async {
-                    await Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const OffersWidget(),
-                      ),
-                    );
+                    await Navigator.pushNamed(context, '/offers');
                   },
                   child: ListTile(
                     leading: const Icon(
@@ -148,12 +138,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: const EdgeInsetsDirectional.fromSTEB(6, 0, 11, 0),
                 child: InkWell(
                   onTap: () async {
-                    await Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const MyExchangesWidget(),
-                      ),
-                    );
+                    await Navigator.pushNamed(context, '/exchanges');
                   },
                   child: ListTile(
                     leading: const Icon(
@@ -185,12 +170,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: const EdgeInsetsDirectional.fromSTEB(4, 0, 11, 0),
                 child: InkWell(
                   onTap: () async {
-                    await Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const RecommendationWidget(),
-                      ),
-                    );
+                    await Navigator.pushNamed(context, '/recommendation');
                   },
                   child: ListTile(
                     leading: const Icon(
@@ -222,12 +202,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: const EdgeInsetsDirectional.fromSTEB(6, 0, 11, 0),
                 child: InkWell(
                   onTap: () async {
-                    await Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const AboutUsWidget(),
-                      ),
-                    );
+                    await Navigator.pushNamed(context, '/about-us');
                   },
                   child: ListTile(
                     leading: const Icon(
@@ -608,16 +583,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
                       child: Image.asset(
-                        'assets/images/C4.jpg',
-                        width: 180,
-                        height: 60,
-                        fit: BoxFit.fill,
-                      ),
-                    ),
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
-                      child: Image.asset(
                         'assets/images/C1.jpg',
                         width: 180,
                         height: 60,
@@ -648,7 +613,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
                       child: Image.asset(
-                        'assets/images/photo_2022-10-19_21-58-16.jpg',
+                        'assets/images/H1.jpg',
                         width: 180,
                         height: 60,
                         fit: BoxFit.fill,
@@ -729,56 +694,6 @@ class _HomeScreenState extends State<HomeScreen> {
                           const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
                       child: Image.asset(
                         'assets/images/R1.jpg',
-                        width: 180,
-                        height: 60,
-                        fit: BoxFit.fill,
-                      ),
-                    ),
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
-                      child: Image.asset(
-                        'assets/images/S1.jpg',
-                        width: 180,
-                        height: 60,
-                        fit: BoxFit.fill,
-                      ),
-                    ),
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
-                      child: Image.asset(
-                        'assets/images/S3.jpg',
-                        width: 180,
-                        height: 60,
-                        fit: BoxFit.fill,
-                      ),
-                    ),
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
-                      child: Image.asset(
-                        'assets/images/S2.jpg',
-                        width: 180,
-                        height: 60,
-                        fit: BoxFit.fill,
-                      ),
-                    ),
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
-                      child: Image.asset(
-                        'assets/images/T1.jpg',
-                        width: 180,
-                        height: 60,
-                        fit: BoxFit.fill,
-                      ),
-                    ),
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
-                      child: Image.asset(
-                        'assets/images/Y1.jpg',
                         width: 180,
                         height: 60,
                         fit: BoxFit.fill,
