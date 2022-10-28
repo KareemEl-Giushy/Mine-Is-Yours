@@ -9,10 +9,10 @@ class OffersScreen extends StatefulWidget {
 }
 
 class _OffersScreenState extends State<OffersScreen> {
-  bool? radioListTileValue1;
-  bool? radioListTileValue2;
-  bool? checkboxListTileValue3;
-  bool? checkboxListTileValue4;
+  bool radioListTileValue1 = false;
+  bool radioListTileValue2 = false;
+  bool radioListTileValue3 = false;
+  bool radioListTileValue4 = false;
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -102,10 +102,13 @@ class _OffersScreenState extends State<OffersScreen> {
                             unselectedWidgetColor: const Color(0xFF95A1AC),
                           ),
                           child: CheckboxListTile(
-                            value: radioListTileValue1 ??= true,
+                            value: radioListTileValue1,
                             onChanged: (newValue) async {
                               setState(() {
                                 radioListTileValue2 = !newValue!;
+                                radioListTileValue3 = !newValue;
+                                radioListTileValue4 = !newValue;
+
                                 radioListTileValue1 = newValue;
                               });
                             },
@@ -175,10 +178,12 @@ class _OffersScreenState extends State<OffersScreen> {
                             unselectedWidgetColor: const Color(0xFF95A1AC),
                           ),
                           child: CheckboxListTile(
-                            value: radioListTileValue2 ??= false,
+                            value: radioListTileValue2,
                             onChanged: (newValue) async {
                               setState(() {
                                 radioListTileValue1 = !newValue!;
+                                radioListTileValue3 = !newValue;
+                                radioListTileValue4 = !newValue;
                                 radioListTileValue2 = newValue;
                               });
                             },
@@ -264,10 +269,15 @@ class _OffersScreenState extends State<OffersScreen> {
                             unselectedWidgetColor: const Color(0xFF95A1AC),
                           ),
                           child: CheckboxListTile(
-                            value: checkboxListTileValue3 ??= false,
+                            value: radioListTileValue3,
                             onChanged: (newValue) async {
-                              setState(
-                                  () => checkboxListTileValue3 = newValue!);
+                              setState(() {
+                                radioListTileValue1 = !newValue!;
+                                radioListTileValue2 = !newValue;
+                                radioListTileValue4 = !newValue;
+
+                                radioListTileValue3 = newValue;
+                              });
                             },
                             title: Text(
                               '120 points' /* 120 points */,
@@ -327,10 +337,15 @@ class _OffersScreenState extends State<OffersScreen> {
                             unselectedWidgetColor: const Color(0xFF95A1AC),
                           ),
                           child: CheckboxListTile(
-                            value: checkboxListTileValue4 ??= false,
+                            value: radioListTileValue4,
                             onChanged: (newValue) async {
-                              setState(
-                                  () => checkboxListTileValue4 = newValue!);
+                              setState(() {
+                                radioListTileValue1 = !newValue!;
+                                radioListTileValue2 = !newValue;
+                                radioListTileValue3 = !newValue;
+
+                                radioListTileValue4 = newValue;
+                              });
                             },
                             title: Text(
                               '250 points' /* 250 points */,
