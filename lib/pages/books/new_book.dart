@@ -599,7 +599,6 @@ class _NewBookScreenState extends State<NewBookScreen> {
             child: FlutterFlowDropDown(
               options: const [
                 'Exchange',
-                'Borrow',
                 'Lend',
               ],
               onChanged: (val) => setState(() => dropDownValue3 = val),
