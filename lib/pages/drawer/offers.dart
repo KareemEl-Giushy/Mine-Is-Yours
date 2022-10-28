@@ -34,7 +34,7 @@ class _OffersScreenState extends State<OffersScreen> {
             size: 30,
           ),
           onPressed: () async {
-            Navigator.pop(context);
+            Navigator.maybePop(context);
           },
         ),
         title: Text(

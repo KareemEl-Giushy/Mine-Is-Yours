@@ -30,6 +30,7 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
             size: 30,
           ),
           onPressed: () {
+            Navigator.maybePop(context);
             print('IconButton pressed ...');
           },
         ),

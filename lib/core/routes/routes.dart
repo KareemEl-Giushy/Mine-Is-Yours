@@ -22,7 +22,7 @@ class Routes {
   static const myProfile = "/profile";
   static const completeProfile = "/complete-profile";
   static const aboutUs = "/about-us";
-  static const myExchanges = "/Exchanges";
+  static const myExchanges = "/exchanges";
   static const offers = "/offers";
   static const recommendation = "/recommendation";
   static const payment = "/payment";
@@ -51,11 +51,11 @@ class RouterGenerator {
       case Routes.myProfile:
         return PageTransition(
             child: const MyProfileScreen(),
-            type: PageTransitionType.rightToLeft);
+            type: PageTransitionType.leftToRight);
       case Routes.completeProfile:
         return PageTransition(
             child: const CompleteProfileScreen(),
-            type: PageTransitionType.rightToLeft);
+            type: PageTransitionType.bottomToTop);
       case Routes.aboutUs:
         return PageTransition(
             child: const AboutUsScreen(), type: PageTransitionType.leftToRight);
