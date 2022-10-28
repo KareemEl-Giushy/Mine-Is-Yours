@@ -1,6 +1,8 @@
 import 'package:mus_app/core/flutter_flow/flutter_flow.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:image_picker/image_picker.dart';
+import 'dart:io';
 
 import '../books/book_details.dart';
 
@@ -15,12 +17,101 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
   double? ratingBarValue1;
   double? ratingBarValue2;
   double? ratingBarValue3;
-  final scaffoldKey = GlobalKey<ScaffoldState>();
+  File? _photo;
+
+  showBottomSheet() {
+    return showModalBottomSheet(
+        context: context,
+        builder: (context) {
+          return Container(
+            height: 200,
+            child: Column(
+              children: <Widget>[
+                const Padding(
+                  padding: EdgeInsets.all(20),
+                  child: Text(
+                    "Please Choose Image",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                InkWell(
+                  child: Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.all(8),
+                    child: Row(
+                      children: const [
+                        Icon(
+                          Icons.photo_outlined,
+                          size: 30,
+                        ),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Text(
+                          "From Gallery",
+                          style: TextStyle(fontSize: 20),
+                        )
+                      ],
+                    ),
+                  ),
+                  onTap: () async {
+                    var picked = await ImagePicker()
+                        .pickImage(source: ImageSource.gallery);
+                    if (picked != null) {
+                      setState(() {
+                        _photo = File(picked.path);
+                      });
+                    }
+                    // ignore: use_build_context_synchronously
+                    Navigator.of(context).maybePop();
+                  },
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                InkWell(
+                  child: Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.all(8),
+                    child: Row(
+                      children: const [
+                        Icon(
+                          Icons.camera,
+                          size: 30,
+                        ),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Text(
+                          "From Camera",
+                          style: TextStyle(fontSize: 20),
+                        )
+                      ],
+                    ),
+                  ),
+                  onTap: () async {
+                    var picked = await ImagePicker()
+                        .pickImage(source: ImageSource.camera);
+                    if (picked != null) {
+                      setState(() {
+                        _photo = File(picked.path);
+                      });
+                    }
+                    Navigator.of(context).maybePop();
+                  },
+                ),
+              ],
+            ),
+          );
+        });
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      key: scaffoldKey,
       backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -118,12 +209,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                       padding: const EdgeInsetsDirectional.fromSTEB(0, 2, 0, 0),
                       child: FFButtonWidget(
                         onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => Container(), // Change
-                            ),
-                          );
+                          showBottomSheet();
                         },
                         text: 'Edit' /* Edit */,
                         options: FFButtonOptions(
