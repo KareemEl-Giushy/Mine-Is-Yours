@@ -57,7 +57,73 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
                 Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(20, 20, 20, 0),
                   child: Text(
-                    'We are a group of book lovers' /* We are a group of book lovers ... */,
+                    "We are a group of book lovers and we realized that book lovers' biggest nightmare is seeing his book being sold as part of a ' waste - paper pile ' So we decided to implement this application to help them not to go through that nightmarish experience.",
+                    textAlign: TextAlign.start,
+                    style: FlutterFlowTheme.of(context).bodyText1.override(
+                          fontFamily: 'Libre Baskerville',
+                          fontSize: 18,
+                        ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsetsDirectional.fromSTEB(20, 20, 20, 0),
+                  child: Text(
+                    "So our endeavor has always been to come up with a group of services that would always enable the book lovers to have a pleasant experience across our application - be it reading or exchanging their ' well read ' titles for new ones or writing about what they have read.",
+                    textAlign: TextAlign.start,
+                    style: FlutterFlowTheme.of(context).bodyText1.override(
+                          fontFamily: 'Libre Baskerville',
+                          fontSize: 18,
+                        ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsetsDirectional.fromSTEB(20, 20, 20, 0),
+                  child: Text(
+                    "This Mine is Yours app was born out of a genuine need for book lovers to make sure that their \"well-read\" books go to other book lovers like them. ",
+                    textAlign: TextAlign.start,
+                    style: FlutterFlowTheme.of(context).bodyText1.override(
+                          fontFamily: 'Libre Baskerville',
+                          fontSize: 18,
+                        ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsetsDirectional.fromSTEB(20, 20, 20, 0),
+                  child: Text(
+                    "Use our application and give us your treasures and make sure it reaches another book lover like you..... ",
+                    textAlign: TextAlign.start,
+                    style: FlutterFlowTheme.of(context).bodyText1.override(
+                          fontFamily: 'Libre Baskerville',
+                          fontSize: 18,
+                        ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsetsDirectional.fromSTEB(20, 20, 20, 0),
+                  child: Text(
+                    "All you pay for is the price of points (a small cost to avoid your worst nightmare).",
+                    textAlign: TextAlign.start,
+                    style: FlutterFlowTheme.of(context).bodyText1.override(
+                          fontFamily: 'Libre Baskerville',
+                          fontSize: 18,
+                        ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsetsDirectional.fromSTEB(20, 20, 20, 0),
+                  child: Text(
+                    "It's simple, easy,  safe, social and economical and an opportunity for you to play a small part in protecting by recycling.",
+                    textAlign: TextAlign.start,
+                    style: FlutterFlowTheme.of(context).bodyText1.override(
+                          fontFamily: 'Libre Baskerville',
+                          fontSize: 18,
+                        ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsetsDirectional.fromSTEB(20, 20, 20, 20),
+                  child: Text(
+                    "We hope you have a great experience in our application. And because we are confident in our application, it will be available with each new user of the application 150 points that enable him to try it free.",
                     textAlign: TextAlign.start,
                     style: FlutterFlowTheme.of(context).bodyText1.override(
                           fontFamily: 'Libre Baskerville',
