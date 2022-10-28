@@ -328,6 +328,17 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                     ),
                   ),
+                  Expanded(
+                    child: Align(
+                      alignment: Alignment.centerRight,
+                      child: IconButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/search');
+                        },
+                        icon: const Icon(Icons.arrow_forward),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -335,12 +346,10 @@ class _HomeScreenState extends State<HomeScreen> {
               padding: const EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
               child: Container(
                 width: double.infinity,
-                height: 140,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                 ),
                 child: ListView(
-                  padding: EdgeInsets.zero,
                   scrollDirection: Axis.horizontal,
                   children: [
                     Padding(
