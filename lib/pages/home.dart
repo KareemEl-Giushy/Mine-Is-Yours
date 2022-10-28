@@ -29,8 +29,6 @@ class _HomeScreenState extends State<HomeScreen> {
             color: Colors.white,
           ),
           child: ListView(
-            padding: EdgeInsets.zero,
-            scrollDirection: Axis.vertical,
             children: [
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(0, 50, 0, 5),
@@ -291,8 +289,7 @@ class _HomeScreenState extends State<HomeScreen> {
         elevation: 6,
       ),
       body: SafeArea(
-        child: Column(
-          mainAxisSize: MainAxisSize.max,
+        child: ListView(
           children: [
             Padding(
               padding: const EdgeInsetsDirectional.fromSTEB(0, 18, 0, 0),
