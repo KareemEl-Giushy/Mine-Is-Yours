@@ -1,12 +1,8 @@
-import '../../core/flutter_flow/flutter_flow_icon_button.dart';
-import '../../core/flutter_flow/flutter_flow_theme.dart';
-import '../../core/flutter_flow/flutter_flow_widgets.dart';
+import 'package:mus_app/core/flutter_flow/flutter_flow.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
-import '../profile/my_profile.dart';
 
 class BookDetailsWidget extends StatefulWidget {
   const BookDetailsWidget({Key? key}) : super(key: key);

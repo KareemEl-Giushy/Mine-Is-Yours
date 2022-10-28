@@ -2,16 +2,11 @@ import 'package:mus_app/core/flutter_flow/flutter_flow.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import 'drawer/about_us.dart';
 import 'books/book_details.dart';
-import 'profile/my_profile.dart';
 import 'books/new_book.dart';
-import 'drawer/offers.dart';
-import 'drawer/recommendations.dart';
 import 'search.dart';
 import 'get_started_screen.dart';
 import 'academic.dart';
-import 'drawer/my_exchanges.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

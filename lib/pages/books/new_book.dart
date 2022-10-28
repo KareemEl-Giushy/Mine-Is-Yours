@@ -1,7 +1,4 @@
-import '../../core/flutter_flow/flutter_flow_drop_down.dart';
-import '../../core/flutter_flow/flutter_flow_icon_button.dart';
-import '../../core/flutter_flow/flutter_flow_theme.dart';
-import '../../core/flutter_flow/flutter_flow_widgets.dart';
+import 'package:mus_app/core/flutter_flow/flutter_flow.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
