@@ -3,9 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'books/book_details.dart';
-import 'books/new_book.dart';
-import 'search.dart';
-import 'get_started_screen.dart';
 import 'academic.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -229,12 +226,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: const EdgeInsetsDirectional.fromSTEB(6, 0, 11, 0),
                 child: InkWell(
                   onTap: () async {
-                    await Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const GetStartedScreen(),
-                      ),
-                    );
+                    await Navigator.pushNamed(context, '/onboarding');
                   },
                   child: ListTile(
                     leading: const Icon(
@@ -727,12 +719,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           const EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
                       child: FFButtonWidget(
                         onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const NewBookWidget(),
-                            ),
-                          );
+                          Navigator.pushNamed(context, '/new-book');
                         },
                         text: 'Giving' /* Giving */,
                         icon: const FaIcon(

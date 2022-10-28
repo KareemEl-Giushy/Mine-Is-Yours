@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mus_app/core/flutter_flow/flutter_flow.dart';
 import 'package:mus_app/pages/auth/create_account_screen.dart';
 import 'package:mus_app/pages/auth/forget_password_screen.dart';
+import 'package:mus_app/pages/books/new_book.dart';
 import 'package:mus_app/pages/drawer/about_us.dart';
 import 'package:mus_app/pages/drawer/my_exchanges.dart';
 import 'package:mus_app/pages/drawer/offers.dart';
@@ -28,6 +29,7 @@ class Routes {
   static const offers = "/offers";
   static const recommendation = "/recommendation";
   static const payment = "/payment";
+  static const newBook = "/new-book";
 }
 
 class RouterGenerator {
@@ -78,6 +80,9 @@ class RouterGenerator {
       case Routes.payment:
         return PageTransition(
             child: const PaymentScreen(), type: PageTransitionType.bottomToTop);
+      case Routes.newBook:
+        return PageTransition(
+            child: const NewBookScreen(), type: PageTransitionType.bottomToTop);
       default:
         return MaterialPageRoute(
           builder: ((context) => const GetStartedScreen()),
