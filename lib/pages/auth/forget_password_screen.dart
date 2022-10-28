@@ -45,7 +45,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
             color: Colors.black,
             size: 30,
           ),
-          onPressed: () async {
+          onPressed: () {
             Navigator.pop(context);
           },
         ),

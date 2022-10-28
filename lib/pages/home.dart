@@ -281,13 +281,8 @@ class _HomeScreenState extends State<HomeScreen> {
               color: Colors.black,
               size: 30,
             ),
-            onPressed: () async {
-              await Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const SearchWidget(),
-                ),
-              );
+            onPressed: () {
+              Navigator.pushNamed(context, '/search');
             },
           ),
         ],
@@ -363,7 +358,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           );
                         },
                         child: Image.asset(
-                          'assets/images/photo_2022-10-19_20-34-48.jpg',
+                          'assets/images/photo_2022-10-19_20-42-53.jpg',
                           width: 120,
                           height: 100,
                           fit: BoxFit.fill,
@@ -374,7 +369,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
                       child: Image.asset(
-                        'assets/images/photo_2022-10-19_20-42-53.jpg',
+                        'assets/images/fdsakhj.jpg',
                         width: 120,
                         height: 100,
                         fit: BoxFit.fill,
@@ -384,7 +379,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
                       child: Image.asset(
-                        'assets/images/photo_2022-10-19_20-43-00.jpg',
+                        'assets/images/photo_2022-10-24_10-18-10.jpg',
                         width: 120,
                         height: 100,
                         fit: BoxFit.fill,
@@ -394,7 +389,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
                       child: Image.asset(
-                        'assets/images/photo_2022-10-19_20-43-14.jpg',
+                        'assets/images/photo_2022-10-24_10-17-38.jpg',
                         width: 120,
                         height: 100,
                         fit: BoxFit.fill,
@@ -404,7 +399,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
                       child: Image.asset(
-                        'assets/images/photo_2022-10-19_20-43-22.jpg',
+                        'assets/images/photo_2022-10-24_10-17-38.jpg',
                         width: 120,
                         height: 100,
                         fit: BoxFit.fill,
@@ -414,7 +409,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
                       child: Image.asset(
-                        'assets/images/photo_2022-10-19_20-43-27.jpg',
+                        'assets/images/photo_2022-10-24_10-17-38.jpg',
                         width: 120,
                         height: 100,
                         fit: BoxFit.cover,
@@ -731,8 +726,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
                       child: FFButtonWidget(
-                        onPressed: () async {
-                          await Navigator.push(
+                        onPressed: () {
+                          Navigator.push(
                             context,
                             MaterialPageRoute(
                               builder: (context) => const NewBookWidget(),
@@ -770,13 +765,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: Align(
                       alignment: const AlignmentDirectional(-0.55, 0),
                       child: FFButtonWidget(
-                        onPressed: () async {
-                          await Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const SearchWidget(),
-                            ),
-                          );
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/search');
                         },
                         text: 'Taking' /* Taking */,
                         icon: const FaIcon(

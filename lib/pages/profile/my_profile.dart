@@ -37,8 +37,8 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
             color: Colors.black,
             size: 30,
           ),
-          onPressed: () async {
-            Navigator.pop(context);
+          onPressed: () {
+            Navigator.maybePop(context);
           },
         ),
         title: Text(
@@ -154,8 +154,8 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                                   padding: const EdgeInsetsDirectional.fromSTEB(
                                       0, 2, 0, 0),
                                   child: FFButtonWidget(
-                                    onPressed: () async {
-                                      await Navigator.push(
+                                    onPressed: () {
+                                      Navigator.push(
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) =>

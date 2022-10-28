@@ -12,6 +12,7 @@ import 'package:mus_app/pages/home.dart';
 import 'package:mus_app/pages/payment.dart';
 import 'package:mus_app/pages/profile/complete_profile.dart';
 import 'package:mus_app/pages/profile/my_profile.dart';
+import 'package:mus_app/pages/search.dart';
 
 class Routes {
   static const login = "/";
@@ -19,6 +20,7 @@ class Routes {
   static const forgetPassword = "/forget-password";
   static const onBoarding = "/onboarding";
   static const home = "/home";
+  static const search = "/search";
   static const myProfile = "/profile";
   static const completeProfile = "/complete-profile";
   static const aboutUs = "/about-us";
@@ -48,6 +50,9 @@ class RouterGenerator {
       case Routes.home:
         return PageTransition(
             child: const HomeScreen(), type: PageTransitionType.fade);
+      case Routes.search:
+        return PageTransition(
+            child: const SearchScreen(), type: PageTransitionType.leftToRight);
       case Routes.myProfile:
         return PageTransition(
             child: const MyProfileScreen(),

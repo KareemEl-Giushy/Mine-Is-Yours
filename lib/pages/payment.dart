@@ -48,7 +48,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
             color: Colors.black,
             size: 30,
           ),
-          onPressed: () async {
+          onPressed: () {
             Navigator.pop(context);
           },
         ),

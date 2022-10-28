@@ -1,4 +1,3 @@
-import 'package:flutter/rendering.dart';
 import 'package:mus_app/core/flutter_flow/flutter_flow.dart';
 import 'package:flutter/material.dart';
 
@@ -30,7 +29,7 @@ class _MyExchangesScreenState extends State<MyExchangesScreen> {
             color: Colors.black,
             size: 30,
           ),
-          onPressed: () async {
+          onPressed: () {
             Navigator.maybePop(context);
           },
         ),

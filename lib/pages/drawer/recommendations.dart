@@ -29,7 +29,7 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
             color: Colors.black,
             size: 30,
           ),
-          onPressed: () async {
+          onPressed: () {
             Navigator.maybePop(context);
           },
         ),

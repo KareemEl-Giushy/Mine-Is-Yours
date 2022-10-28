@@ -61,7 +61,7 @@ class _NewBookWidgetState extends State<NewBookWidget> {
             color: Colors.black,
             size: 30,
           ),
-          onPressed: () async {
+          onPressed: () {
             Navigator.pop(context);
           },
         ),
@@ -807,8 +807,8 @@ Book */
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               20, 12, 20, 40),
                           child: FFButtonWidget(
-                            onPressed: () async {
-                              await Navigator.push(
+                            onPressed: () {
+                              Navigator.push(
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => Container(), // Change

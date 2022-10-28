@@ -33,7 +33,7 @@ class _OffersScreenState extends State<OffersScreen> {
             color: Colors.black,
             size: 30,
           ),
-          onPressed: () async {
+          onPressed: () {
             Navigator.maybePop(context);
           },
         ),
@@ -361,8 +361,8 @@ class _OffersScreenState extends State<OffersScreen> {
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(0, 80, 0, 0),
                 child: FFButtonWidget(
-                  onPressed: () async {
-                    await Navigator.pushNamed(context, '/payment');
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/payment');
                   },
                   text: 'Change Plan' /* Change Plan */,
                   options: FFButtonOptions(

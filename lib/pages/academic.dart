@@ -31,7 +31,7 @@ class _AcademicWidgetState extends State<AcademicWidget> {
             color: Colors.black,
             size: 30,
           ),
-          onPressed: () async {
+          onPressed: () {
             Navigator.pop(context);
           },
         ),

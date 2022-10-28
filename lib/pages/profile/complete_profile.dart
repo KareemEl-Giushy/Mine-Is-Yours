@@ -1,8 +1,5 @@
-import '../../core/flutter_flow/flutter_flow_theme.dart';
-import '../../core/flutter_flow/flutter_flow_widgets.dart';
+import 'package:mus_app/core/flutter_flow/flutter_flow.dart';
 import 'package:flutter/material.dart';
-
-import 'my_profile.dart';
 
 class CompleteProfileScreen extends StatefulWidget {
   const CompleteProfileScreen({Key? key}) : super(key: key);
@@ -350,8 +347,8 @@ Profile */
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(0, 22, 0, 0),
                 child: FFButtonWidget(
-                  onPressed: () async {
-                    await Navigator.pushNamed(context, '/profile');
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/profile');
                   },
                   text: '5wzlz4po' /* Save */,
                   options: FFButtonOptions(
