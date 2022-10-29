@@ -289,12 +289,11 @@ class _HomeScreenState extends State<HomeScreen> {
         elevation: 6,
       ),
       body: SafeArea(
-        child: ListView(
+        child: Column(
           children: [
             Padding(
               padding: const EdgeInsetsDirectional.fromSTEB(0, 18, 0, 0),
               child: Row(
-                mainAxisSize: MainAxisSize.max,
                 children: [
                   FFButtonWidget(
                     onPressed: () {
@@ -345,84 +344,85 @@ class _HomeScreenState extends State<HomeScreen> {
             Padding(
               padding: const EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
               child: Container(
-                width: double.infinity,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                 ),
-                child: ListView(
+                child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
-                  children: [
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
-                      child: InkWell(
-                        onTap: () async {
-                          await Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const BookDetailsWidget(),
-                            ),
-                          );
-                        },
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding:
+                            const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
+                        child: InkWell(
+                          onTap: () async {
+                            await Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const BookDetailsWidget(),
+                              ),
+                            );
+                          },
+                          child: Image.asset(
+                            'assets/images/photo_2022-10-19_20-42-53.jpg',
+                            width: 120,
+                            height: 100,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding:
+                            const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
                         child: Image.asset(
-                          'assets/images/photo_2022-10-19_20-42-53.jpg',
+                          'assets/images/fdsakhj.jpg',
                           width: 120,
                           height: 100,
                           fit: BoxFit.fill,
                         ),
                       ),
-                    ),
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
-                      child: Image.asset(
-                        'assets/images/fdsakhj.jpg',
-                        width: 120,
-                        height: 100,
-                        fit: BoxFit.fill,
+                      Padding(
+                        padding:
+                            const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
+                        child: Image.asset(
+                          'assets/images/photo_2022-10-24_10-18-10.jpg',
+                          width: 120,
+                          height: 100,
+                          fit: BoxFit.fill,
+                        ),
                       ),
-                    ),
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
-                      child: Image.asset(
-                        'assets/images/photo_2022-10-24_10-18-10.jpg',
-                        width: 120,
-                        height: 100,
-                        fit: BoxFit.fill,
+                      Padding(
+                        padding:
+                            const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
+                        child: Image.asset(
+                          'assets/images/photo_2022-10-24_10-17-38.jpg',
+                          width: 120,
+                          height: 100,
+                          fit: BoxFit.fill,
+                        ),
                       ),
-                    ),
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
-                      child: Image.asset(
-                        'assets/images/photo_2022-10-24_10-17-38.jpg',
-                        width: 120,
-                        height: 100,
-                        fit: BoxFit.fill,
+                      Padding(
+                        padding:
+                            const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
+                        child: Image.asset(
+                          'assets/images/photo_2022-10-24_10-17-38.jpg',
+                          width: 120,
+                          height: 100,
+                          fit: BoxFit.fill,
+                        ),
                       ),
-                    ),
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
-                      child: Image.asset(
-                        'assets/images/photo_2022-10-24_10-17-38.jpg',
-                        width: 120,
-                        height: 100,
-                        fit: BoxFit.fill,
+                      Padding(
+                        padding:
+                            const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
+                        child: Image.asset(
+                          'assets/images/photo_2022-10-24_10-17-38.jpg',
+                          width: 120,
+                          height: 100,
+                          fit: BoxFit.cover,
+                        ),
                       ),
-                    ),
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
-                      child: Image.asset(
-                        'assets/images/photo_2022-10-24_10-17-38.jpg',
-                        width: 120,
-                        height: 100,
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),
