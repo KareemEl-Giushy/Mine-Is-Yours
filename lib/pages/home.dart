@@ -290,6 +290,8 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: SafeArea(
         child: Column(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Padding(
               padding: const EdgeInsetsDirectional.fromSTEB(0, 18, 0, 0),
@@ -375,7 +377,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         padding:
                             const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
                         child: Image.asset(
-                          'assets/images/fdsakhj.jpg',
+                          'assets/images/photo_2022-10-19_20-42-53.jpg',
                           width: 120,
                           height: 100,
                           fit: BoxFit.fill,
@@ -385,7 +387,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         padding:
                             const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
                         child: Image.asset(
-                          'assets/images/photo_2022-10-24_10-18-10.jpg',
+                          'assets/images/photo_2022-10-19_20-42-53.jpg',
                           width: 120,
                           height: 100,
                           fit: BoxFit.fill,
@@ -395,7 +397,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         padding:
                             const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
                         child: Image.asset(
-                          'assets/images/photo_2022-10-24_10-17-38.jpg',
+                          'assets/images/photo_2022-10-19_20-42-53.jpg',
                           width: 120,
                           height: 100,
                           fit: BoxFit.fill,
@@ -405,7 +407,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         padding:
                             const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
                         child: Image.asset(
-                          'assets/images/photo_2022-10-24_10-17-38.jpg',
+                          'assets/images/photo_2022-10-19_20-42-53.jpg',
                           width: 120,
                           height: 100,
                           fit: BoxFit.fill,
@@ -415,7 +417,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         padding:
                             const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
                         child: Image.asset(
-                          'assets/images/photo_2022-10-24_10-17-38.jpg',
+                          'assets/images/photo_2022-10-19_20-42-53.jpg',
                           width: 120,
                           height: 100,
                           fit: BoxFit.cover,
@@ -691,6 +693,56 @@ class _HomeScreenState extends State<HomeScreen> {
                           const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
                       child: Image.asset(
                         'assets/images/R1.jpg',
+                        width: 180,
+                        height: 60,
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
+                      child: Image.asset(
+                        'assets/images/fdsakhj.jpg',
+                        width: 180,
+                        height: 60,
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
+                      child: Image.asset(
+                        'assets/images/photo_2022-10-24_10-18-10.jpg',
+                        width: 180,
+                        height: 60,
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
+                      child: Image.asset(
+                        'assets/images/photo_2022-10-24_10-17-38.jpg',
+                        width: 180,
+                        height: 60,
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
+                      child: Image.asset(
+                        'assets/images/K2.jpg',
+                        width: 180,
+                        height: 60,
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(8, 0, 16, 0),
+                      child: Image.asset(
+                        'assets/images/B3.jpg',
                         width: 180,
                         height: 60,
                         fit: BoxFit.fill,
